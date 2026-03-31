@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+.tagline {
+    color: #94a3b8;
+}
+
+/* NAV */
+nav a {
+    color: #38bdf8;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 30px;
+}
+
+/* CARDS (GRID) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD DESIGN */
+.card {
+    background: #020617;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* COOL HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* RECIPE BOX */
+.recipe-box {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.recipe-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* INFO TAGS */
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: #facc15;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #020617;
+    margin-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
